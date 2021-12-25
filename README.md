@@ -1,4 +1,4 @@
-# Spring Multi Module
+# Spring Multi Module App
 
 그레들을 이용한 멀티 모듈 구성 
 
