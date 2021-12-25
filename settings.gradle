@@ -5,4 +5,10 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 rootProject.name = 'multi'
+
+include 'admin'
+include 'comon'
+include 'user'
+
