@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion")
-        classpath("io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE")
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
     }
 }
 
@@ -40,16 +40,24 @@ subprojects {
 
 }
 
-project(":admin") {
+project(":common") {
 
+}
+
+project(":admin") {
+    dependencies {
+        implementation project(":common")
+    }
 }
 
 project(":user") {
     dependencies {
-//        compile project(":admin")
+        implementation project(':common')
     }
 }
 
-project(":common") {
-
+def mainProjects = [':common', ':user', ':admin']
+task oneJar(type: Jar, dependsOn: mainProjects.collect { it + ":compileJava" }) {
+    baseName = 'multi'
+    from files(mainProjects.collect { project(it).sourceSets.main.output })
 }
