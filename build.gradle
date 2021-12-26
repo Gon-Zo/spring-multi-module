@@ -50,6 +50,6 @@ project(":user") {
     }
 }
 
-project(":comon") {
+project(":common") {
 
 }

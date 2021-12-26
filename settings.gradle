@@ -9,6 +9,6 @@ pluginManagement {
 rootProject.name = 'multi'
 
 include 'admin'
-include 'comon'
+include 'common'
 include 'user'
 
