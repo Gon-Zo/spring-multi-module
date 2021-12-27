@@ -41,7 +41,6 @@ subprojects {
 }
 
 project(":common") {
-
 }
 
 project(":admin") {
@@ -56,8 +55,3 @@ project(":user") {
     }
 }
 
-def mainProjects = [':common', ':user', ':admin']
-task oneJar(type: Jar, dependsOn: mainProjects.collect { it + ":compileJava" }) {
-    baseName = 'multi'
-    from files(mainProjects.collect { project(it).sourceSets.main.output })
-}

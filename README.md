@@ -1,6 +1,6 @@
 # Spring Multi Module App
 
-그레들을 이용한 멀티 모듈 구성 
+![springgradle](https://user-images.githubusercontent.com/52229154/147441016-dde6ab37-0412-4664-8e61-4237ac29081b.png)
 
 ## Runbook
 
@@ -11,6 +11,8 @@
 
 ## Description
 
+그레들을 이용한 멀티 모듈 구성
+
 ### 디렉토리 구조
 
 Admin, Common, User 로 3가지로 모듈 구조 구성
@@ -20,7 +22,7 @@ Admin, Common, User 로 3가지로 모듈 구조 구성
 ### 모듈별로 gradle bootJar 실행
 
 ```cmd
- ./gradlew clean  bootJar -p ./admin
+./gradlew clean jar -p ./admin
 ```
 
 <img width="604" alt="스크린샷 2021-12-26 오후 6 40 35" src="https://user-images.githubusercontent.com/53357210/147404404-0fab271c-7f9f-4520-8305-1e2514de66cd.png">
