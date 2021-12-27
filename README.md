@@ -9,7 +9,7 @@
 <img width="391" alt="스크린샷 2021-12-27 오후 7 01 06" src="https://user-images.githubusercontent.com/53357210/147460584-fbf9611a-14ad-44cc-b32d-3a8b45402082.png">
 
 ## Spec
-- spring boot 2.6.1
+- spring boot 2.6.2
 - java 11 ~ 13
 - gradle
 
