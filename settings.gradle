@@ -1,14 +1,6 @@
-pluginManagement {
-    repositories {
-        maven { url 'https://repo.spring.io/release' }
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
 
-rootProject.name = 'multi'
 
-include 'admin'
-include 'common'
+rootProject.name = 'demo'
+
 include 'user'
-
+include 'contents'

@@ -4,6 +4,7 @@ plugins {
     id 'io.spring.dependency-management'
 }
 
+
 bootJar {
     enabled = true
 }
